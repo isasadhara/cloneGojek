@@ -1,112 +1,57 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
+import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
-import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import HomeIcon from './src/assets/icons/home.svg';
+import OrdersIcon from './src/assets/icons/orders.svg';
+import HelpIcon from './src/assets/icons/help.svg';
+import InboxIcon from './src/assets/icons/inbox.svg';
+import AccountIcon from './src/assets/icons/account.svg';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
+const App = () => {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
+    <View style={styles.wrapper}>
+      <View style={{flex: 1, backgroundColor: 'blue'}}></View>
+      <View style={styles.wrapperBottomNav}>
+        <View style={styles.menuBottomNav}>
+          <HomeIcon />
+          <Text style={styles.textIcon}>Home</Text>
+        </View>
+        <View style={styles.menuBottomNav}>
+          <OrdersIcon />
+          <Text style={styles.textIcon}>Orders</Text>
+        </View>
+        <View style={styles.menuBottomNav}>
+          <HelpIcon />
+          <Text style={styles.textIcon}>Help</Text>
+        </View>
+        <View style={styles.menuBottomNav}>
+          <InboxIcon />
+          <Text style={styles.textIcon}>Inbox</Text>
+        </View>
+        <View style={styles.menuBottomNav}>
+          <AccountIcon />
+          <Text style={styles.textIcon}>Account</Text>
+        </View>
+      </View>
     </View>
   );
 };
 
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
-};
+export default App;
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  wrapper: {flex: 1},
+  wrapperBottomNav: {
+    height: 54,
+    flexDirection: 'row',
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
+  menuBottomNav: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  textIcon: {
+    fontSize: 10,
+    color: '#545454',
+    marginTop: 4,
   },
 });
-
-export default App;
