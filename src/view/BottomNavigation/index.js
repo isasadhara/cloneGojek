@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
   wrapperBottomNav: {
     height: 54,
     flexDirection: 'row',
+    backgroundColor: 'white',
   },
   menuBottomNav: {
     flex: 1,
