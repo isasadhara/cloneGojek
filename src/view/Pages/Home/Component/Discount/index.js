@@ -5,7 +5,7 @@ const Discount = () => {
   return (
     <View style={styles.wrapperDiscount}>
       <Image
-        source={require('../../assets/Images/discount.png')}
+        source={require('../../../../../assets/Images/discount.png')}
         style={styles.iconDiscount}
       />
     </View>

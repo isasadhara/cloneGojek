@@ -1,15 +1,15 @@
 import {StyleSheet, Text, View, Image} from 'react-native';
 import React from 'react';
-import PayIcon from '../../assets/Icons/pay.svg';
-import NearbyIcon from '../../assets/Icons/nearby.svg';
-import TopUpIcon from '../../assets/Icons/topup.svg';
-import MoreIcon from '../../assets/Icons/more.svg';
+import PayIcon from './assets/pay.svg';
+import NearbyIcon from './assets/nearby.svg';
+import TopUpIcon from './assets/topup.svg';
+import MoreIcon from './assets/more.svg';
 
 const Gopay = () => {
   return (
     <View style={styles.wrapper}>
       <View style={styles.wrapperSaldo}>
-        <Image source={require('../../assets/Images/gopay.png')} />
+        <Image source={require('../../../../../assets/Images/gopay.png')} />
         <Text style={styles.jumlahSaldo}>Rp50.000</Text>
       </View>
       <View style={styles.wrapperMenu}>

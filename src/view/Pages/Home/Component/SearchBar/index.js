@@ -9,7 +9,7 @@ const SearchBar = () => {
         style={styles.inputSearch}
       />
       <Image
-        source={require('../../assets/Images/search.png')}
+        source={require('../../../../../assets/Images/search.png')}
         style={styles.iconSearch}
       />
     </View>
