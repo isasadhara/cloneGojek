@@ -6,6 +6,7 @@ import Gopay from './Component/Gopay';
 import MainFeatures from './Component/MainFeature';
 import News from './Component/News';
 import Banner from './Component/Banner';
+import InternalInformation from './Component/InternalInformation';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <MainFeatures />
       <View style={styles.line} />
       <News />
+      <InternalInformation />
       <Banner />
     </ScrollView>
   );
