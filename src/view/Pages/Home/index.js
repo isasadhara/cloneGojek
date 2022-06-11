@@ -5,6 +5,7 @@ import Discount from './Component/Discount';
 import Gopay from './Component/Gopay';
 import MainFeatures from './Component/MainFeature';
 import News from './Component/News';
+import Banner from './Component/Banner';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <MainFeatures />
       <View style={styles.line} />
       <News />
+      <Banner />
     </ScrollView>
   );
 };

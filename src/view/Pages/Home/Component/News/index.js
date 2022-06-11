@@ -4,10 +4,10 @@ import React from 'react';
 const News = () => {
   return (
     <View style={styles.wrapper}>
-      <View style={{marginTop: 17, position: 'relative'}}>
+      <View style={styles.wrapperBanner}>
         <Image
           source={{
-            uri: 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
+            uri: 'https://kabarindoraya.com/wp-content/uploads/2020/10/IMG-20201018-WA0004.jpg',
           }}
           style={styles.banner}
         />
@@ -33,6 +33,7 @@ const styles = StyleSheet.create({
   wrapper: {
     marginHorizontal: 17,
   },
+  wrapperBanner: {marginTop: 17, position: 'relative'},
   banner: {height: 180, width: '100%', borderRadius: 10},
   iconBanner: {
     position: 'absolute',
@@ -57,7 +58,6 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
     borderBottomColor: '#E8E9ED',
     borderBottomWidth: 1,
-    marginBottom: 20,
   },
   titleNews: {fontSize: 16, fontWeight: 'bold'},
   descNews: {fontSize: 14, marginTop: 5, color: '#7A7A7A'},
