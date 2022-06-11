@@ -7,10 +7,12 @@ import MainFeatures from './Component/MainFeature';
 import News from './Component/News';
 import Banner from './Component/Banner';
 import InternalInformation from './Component/InternalInformation';
+import NearbyRestaurants from './Component/NearbyRestaurants';
 
 const Home = () => {
   return (
-    <ScrollView style={{flex: 1, backgroundColor: 'white', paddingTop: 15}}>
+    <ScrollView
+      style={{flex: 1, backgroundColor: 'white', paddingVertical: 17}}>
       <View style={styles.wrapperSearch}>
         <SearchBar />
         <Discount />
@@ -21,6 +23,7 @@ const Home = () => {
       <News />
       <InternalInformation />
       <Banner />
+      <NearbyRestaurants />
     </ScrollView>
   );
 };
