@@ -12,7 +12,7 @@ import HomeGoPay from './containers/organisms/HomeGoPay';
 const App = () => {
   return (
     <View style={styles.wrapper}>
-      <ScrollView style={{flex: 1, backgroundColor: 'white'}}>
+      <ScrollView style={styles.scroll}>
         <SearchFeature />
         <HomeGoPay />
         <HomeMainFeature />
@@ -31,5 +31,6 @@ export default App;
 
 const styles = StyleSheet.create({
   wrapper: {flex: 1},
+  scroll: {flex: 1, backgroundColor: 'white'},
   line: {height: 15, backgroundColor: '#F2F2F4', marginTop: 17},
 });
