@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const GoNews = () => {
+const GoNews = ({onPress}) => {
   return (
     <View style={styles.wrapper}>
       <View style={styles.wrapperBanner}>
@@ -19,7 +19,7 @@ const GoNews = () => {
         <Text style={styles.descNews}>
           Tim Jaguar Gerebek Rumah untuk ritual Santet di Depok.
         </Text>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={onPress}>
           <Text style={styles.nameButton}>READ</Text>
         </TouchableOpacity>
       </View>
